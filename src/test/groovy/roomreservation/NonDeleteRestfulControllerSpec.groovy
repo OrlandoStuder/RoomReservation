@@ -1,10 +1,9 @@
 package roomreservation
 
-import grails.rest.Resource
-import grails.testing.gorm.DomainUnitTest
+import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class BookingSpec extends Specification implements DomainUnitTest<Booking> {
+class NonDeleteRestfulControllerSpec extends Specification implements ControllerUnitTest<NonDeleteRestfulController> {
 
     def setup() {
     }

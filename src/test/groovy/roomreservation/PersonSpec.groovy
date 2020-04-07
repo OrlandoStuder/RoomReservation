@@ -1,5 +1,6 @@
 package roomreservation
 
+import grails.rest.Resource
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 

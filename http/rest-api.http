@@ -1,0 +1,29 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+
+
+// Neuen Tupel (Eintrag) erstellen
+POST http://localhost:8080/people
+Content-Type: application/json
+
+{"firstName": "Hans", "lastName": "Müller", "email": "hans@mueller.com"}
+
+###
+
+// Eintrag Nr 4 löschen
+DELETE http://localhost:8080/people/4
+
+
+// 10 Photos "bestellen"
+GET https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&per_page=10&format=json&nojsoncallback=1&api_key=865ae530a7dbb28c085dee3ef95e9986
+Accept: */*
+Cache-Control: no-cache
+
+###
+
