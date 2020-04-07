@@ -2,7 +2,7 @@ package roomreservation
 
 import grails.rest.Resource
 
-@Resource(uri = "/bookings")
+@Resource(uri = "/bookings", superClass = SearchRestfulController)
 class Booking {
 
     Person booker
