@@ -12,7 +12,7 @@ class Person {
 
     // Um Person besser ausgeben zu können
     String toString() {
-        return firstName + " " + lastName
+        return "$firstName  $lastName"
     }
 
 

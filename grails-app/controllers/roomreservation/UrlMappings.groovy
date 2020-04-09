@@ -4,6 +4,7 @@ class UrlMappings {
 
     static mappings = {
         "/rooms/search"(controller: 'room', action: 'search')
+        "/people/search"(controller: 'person', action: 'search')
 
         "/$controller/$action?/$id?(.$format)?"{
             constraints {
