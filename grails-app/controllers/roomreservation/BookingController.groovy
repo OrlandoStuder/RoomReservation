@@ -1,5 +1,9 @@
 package roomreservation
 
+import grails.plugin.springsecurity.annotation.Secured
+
+// Nur User dürfen Access haben
+@Secured(Role.USER)
 class BookingController {
 
     static scaffold = Booking
